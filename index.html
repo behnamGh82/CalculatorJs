@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js" defer></script>
+    <title>calculator</title>
+  </head>
+  <style>
+    div {
+      background-color: lightgray;
+      height: 300px;
+      width: 400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    div input {
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div>
+      <input
+        type="text"
+        id="history"
+        style="border: 0px; background-color: lightgray"
+        disabled
+      />
+      <br />
+      <input
+        type="text"
+        id="firstNum"
+        onchange="setNum()"
+        placeholder="firstnumber"
+      />
+      <br />
+      <input
+        type="text"
+        id="oper"
+        style="border: 0px; background-color: lightgray"
+        disabled
+      />
+      <br />
+      <input
+        type="text"
+        id="secondNum"
+        onchange="setNum()"
+        placeholder="secondnumber"
+      />
+      <br />
+      <input type="text" readonly id="result" placeholder="result" />
+    </div>
+  </body>
+</html>
